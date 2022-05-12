@@ -1,0 +1,66 @@
+/*----Fonts----*/
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+/*--------Global settings--------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/*--------Header--------*/
+.header {
+    display: flex;
+    flex: 1;
+    height: 100px;
+    background-color: #131a25;
+    padding: 12px 12px;
+    align-items: center;
+}
+
+
+.container_header_elements {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    flex: 1;
+    height: 60%;
+    align-items: center;
+    border-radius: 20px;
+    font-family: 'Koulen', cursive;
+    font-size: 30px;
+}
+
+
+.logo_text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.textLogo {
+    color: white;
+    font-family: 'Koulen', cursive;
+    font-size: 50px;
+}

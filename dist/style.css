@@ -165,6 +165,17 @@ section{
 
 
 
+
+
+/*Current option*/
+.navbar .activeOption {
+    background-color: rgb(23, 55, 114);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+
 /*Media Queries*/
 /*Por lo visto actuan como IFS*/
 @media(max-width:991px){

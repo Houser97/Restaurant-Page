@@ -1,66 +1,48 @@
-/*----Fonts----*/
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-/*--------Global settings--------*/
+/* Variable */
+:root {
+    --red:#ff3838;
+}
+
+/*Global*/
+
 *{
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
 }
 
-/*--------Header--------*/
-.header {
+*::selection {
+    background: var(--red);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+header {
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
     display: flex;
-    flex: 1;
-    height: 100px;
-    background-color: #131a25;
-    padding: 12px 12px;
     align-items: center;
-}
-
-
-.container_header_elements {
-    display: flex;
-    flex: 1;
     justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 0 10px;
-}
-
-.options {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: white;
-    flex: 1;
-    height: 60%;
-    align-items: center;
-    border-radius: 20px;
-    font-family: 'Koulen', cursive;
-    font-size: 30px;
-}
-
-
-.logo_text {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-right: 50px;
-}
-
-.logo {
-    height: 80px;
-    width: 80px;
-}
-
-img {
-    height: 100%;
-    width: 100%;
-}
-
-.textLogo {
-    color: white;
-    font-family: 'Koulen', cursive;
-    font-size: 50px;
+    background-color: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0,0.1);
 }

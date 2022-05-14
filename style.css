@@ -217,7 +217,50 @@ section{
     padding: 1rem 0;
 }
 
+/*-------------Contacts------------ */
+.contacts .container-contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 2rem;
+}
 
+.contacts .container-contacts .card{
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    outline: 0.1rem solid #ccc;
+    outline-offset: -1.5rem;
+}
+
+.contacts .container-contacts .card:hover{
+    outline: 0.2rem solid #222;
+    outline-offset: 0;
+}
+
+.contacts .container-contacts .card img{
+    height: 28rem;
+    width: 28rem;
+}
+
+.contacts .container-contacts .card:hover img{
+    transform: scale(0.9);
+}
+
+.contacts .container-contacts .card h3{
+    padding: 0.5rem 0;
+    font-size: 4rem;
+    color: #444;
+}
+
+.contacts .container-contacts .card:hover h3{
+    color: #27ae60;
+}
+
+.contacts .container-contacts .card div{
+    font-size: 1.5rem;
+    color: #333;
+}
 
 
 

@@ -1,3 +1,5 @@
+import './style.css'
+
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let options = document.querySelectorAll('.option');
@@ -65,7 +67,7 @@ function addMenu(mainContent) {
 
     let divBoxList = [];
     
-        for(i = 1; i<=9; i++){
+        for(let i = 1; i<=9; i++){
             let divBox = document.createElement('div');
                 divBox.classList.add('box');
             let img = document.createElement('img');
@@ -93,7 +95,7 @@ function addMenu(mainContent) {
 
     section.appendChild(h1);
     
-    for(i=0;i<=8;i++){
+    for(let i=0;i<=8;i++){
         divBoxContainer.appendChild(divBoxList[i]);
     }    
     section.appendChild(divBoxContainer);
@@ -113,7 +115,7 @@ function addContact(mainContent){
     let numberList = ['555-222-3333','555-222-4444','555-222-5555','555-222-6666']
     let staffMembers = [];
 
-    for(i=0;i<=3;i++){
+    for(let i=0;i<=3;i++){
         let divCard = document.createElement('div');
             divCard.classList.add('card')
         let img = document.createElement('img');
